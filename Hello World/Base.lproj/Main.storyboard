@@ -29,6 +29,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="8fu-G5-ukF"/>
                                 </constraints>
                                 <state key="normal" title="Show Text"/>
+                                <connections>
+                                    <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="elf-lw-Ra7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +44,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFC-3d-0GO" secondAttribute="trailing" constant="50" id="xaV-B7-AZY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="kFC-3d-0GO" id="um1-Tt-fCj"/>
+                        <outlet property="toggleTextButton" destination="jlu-N1-4eA" id="LCr-rz-aLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
