@@ -22,24 +22,37 @@
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlu-N1-4eA">
-                                <rect key="frame" x="139" y="720" width="136" height="30"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-Y7-XCw">
+                                <rect key="frame" x="142" y="734" width="130" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlu-N1-4eA">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Show Text"/>
+                                        <connections>
+                                            <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="elf-lw-Ra7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jB-89-Ibm">
+                                        <rect key="frame" x="0.0" y="60" width="130" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Do something"/>
+                                        <connections>
+                                            <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fe-Cn-KHH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="8fu-G5-ukF"/>
+                                    <constraint firstAttribute="width" constant="130" id="xtx-s5-XDJ"/>
                                 </constraints>
-                                <state key="normal" title="Show Text"/>
-                                <connections>
-                                    <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="elf-lw-Ra7"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jlu-N1-4eA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1v3-cW-ZNM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jlu-N1-4eA" secondAttribute="bottom" constant="112" id="TjT-HV-Laf"/>
+                            <constraint firstItem="HKl-Y7-XCw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dhq-Yt-Xzo"/>
                             <constraint firstItem="kFC-3d-0GO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="UMz-R3-jQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HKl-Y7-XCw" secondAttribute="bottom" constant="38" id="ZiP-Hw-0Gs"/>
                             <constraint firstItem="kFC-3d-0GO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="kyH-ox-PEo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFC-3d-0GO" secondAttribute="trailing" constant="50" id="xaV-B7-AZY"/>
                         </constraints>
