@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLh-74-Bpb">
-                                <rect key="frame" x="50" y="425" width="314" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cLh-74-Bpb">
+                                <rect key="frame" x="50.5" y="429.5" width="313" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,7 +27,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cLh-74-Bpb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Bbw-Lk-04Z"/>
-                            <constraint firstItem="cLh-74-Bpb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XJJ-wc-8c1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cLh-74-Bpb" secondAttribute="trailing" constant="50.5" id="alA-6H-Xf4"/>
+                            <constraint firstItem="cLh-74-Bpb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50.5" id="uek-L5-QG6"/>
                         </constraints>
                     </view>
                 </viewController>
